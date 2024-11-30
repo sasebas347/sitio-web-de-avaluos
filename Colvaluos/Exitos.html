@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exitos</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="Exitos.css">
+</head>
+<body>
+     <!-- Menú Lateral -->
+     <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" id="toggle-btn">&#9776;</button>
+        <a href="Inicio.html"><span>Inicio</span></a>
+        <a href="Acerca de mi.html"><span>Acerca de mi</span></a>
+        <a href="Exitos.html"><span>Servicios</span></a>
+        <a href="Contacto.html"><span>Contacto</span></a>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="contenido" id="contenido">
+        <header>
+            <nav>
+                <!-- Puedes añadir contenido del nav aquí si lo deseas -->
+            </nav>
+        </header>
+
+
+        <section>
+            <article>
+                <h2>Clientes</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                </p>
+            </article>
+    
+            <div class="right-column">
+                <article>
+                    <h2>Logros</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                    </p>
+                </article>
+    
+                <article>
+                    <h2>Contratación</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                    </p>
+                </article>
+            </div>
+        </section>
+            
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('toggle-btn');
+        const contenido = document.getElementById('contenido');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            contenido.classList.toggle('collapsed');
+            toggleBtn.classList.toggle('collapsed');
+        });
+    </script>
+</body>
+</html>

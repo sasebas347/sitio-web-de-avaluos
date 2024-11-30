@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de mi</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="Acerca de mi.css">
+</head>
+<body>
+    <!-- Menú Lateral -->
+    <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" id="toggle-btn">&#9776;</button>
+        <a href="Inicio.html"><span>Inicio</span></a>
+        <a href="Acerca de mi.html"><span>Acerca de mi</span></a>
+        <a href="Exitos.html"><span>Servicios</span></a>
+        <a href="Contacto.html"><span>Contacto</span></a>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="contenido" id="contenido">
+        <header>
+            <nav>
+                <!-- Puedes añadir contenido del nav aquí si lo deseas -->
+            </nav>
+        </header>
+    
+    <section>
+        <article>
+            <h2>SERVICIOS</h2>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+                
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et doloribus vitae, fugit quibusdam quam est corrupti, vel ipsum corporis magnam laborum. Nam non maxime minus aliquid animi sequi repellat corrupti!
+            </p>
+           
+        </article>
+        <img src="PrincipalImg.jpg" alt="">
+    </section>
+
+
+
+    
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('toggle-btn');
+        const contenido = document.getElementById('contenido');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            contenido.classList.toggle('collapsed');
+            toggleBtn.classList.toggle('collapsed');
+        });
+    </script>
+    
+</body>
+</html>

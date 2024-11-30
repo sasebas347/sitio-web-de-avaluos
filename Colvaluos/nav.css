@@ -1,0 +1,95 @@
+   /* Estilos del menú lateral */
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100vh; /* Altura completa de la ventana */
+    width: 250px; /* Ancho fijo */
+    position: fixed; /* Fijo en la pantalla */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Color de fondo oscuro */
+    padding-top: 20px;
+    box-sizing: border-box;
+    transition: width 0.3s;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ddd;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+    color: #fff;
+}
+
+/* Contenido principal */
+.contenido {
+    margin-left: 300px; /* Espacio para el sidebar */
+    padding: 30px;
+    transition: margin-left 0.3s;
+}
+
+/* Botón para colapsar el sidebar */
+.toggle-btn {
+    position: absolute;
+    top: 15px;
+    right: -45px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: right 0.3s;
+}
+
+/* Sidebar colapsado */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.contenido.collapsed {
+    margin-left: 60px;
+}
+
+.toggle-btn.collapsed {
+    right: -25px;
+}
+
+/* Iconos en el sidebar cuando está colapsado */
+.sidebar.collapsed a {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.sidebar.collapsed a span {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar.collapsed {
+        width: 100%;
+    }
+    .contenido {
+        margin-left: 0;
+    }
+    .toggle-btn {
+        top: 10px;
+        right: 10px;
+    }
+}

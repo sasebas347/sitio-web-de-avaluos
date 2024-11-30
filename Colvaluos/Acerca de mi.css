@@ -1,0 +1,15 @@
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+    padding-right: 20px;
+    margin: 20px;
+}
+
+img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,22 @@
+section {
+    display: flex;
+}
+
+/* Estilos para la columna izquierda (Clientes) */
+article:first-child {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilos para la columna derecha (Logros y Contratación) */
+.right-column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Añadir margen entre Logros y Contratación */
+.right-column article {
+    margin-bottom: 20px;
+}

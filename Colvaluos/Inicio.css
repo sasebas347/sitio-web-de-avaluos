@@ -1,0 +1,46 @@
+/* Imagen principal */
+#imagen-principal {
+    float: right; /* Sitúa la imagen en el lado derecho */
+    width: 50%; /* Ajusta el ancho de la imagen, puedes cambiarlo según prefieras */
+    max-width: 500px; /* Define un tamaño máximo para la imagen */
+    margin: 0 0 20px 20px; /* Agrega un margen para separar la imagen del texto */
+    box-sizing: border-box;
+}
+
+/* Sección de comentarios */
+#comentarios {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px; /* Limita el ancho en pantallas grandes */
+    box-sizing: border-box;
+}
+
+#comentarios textarea {
+    width: 100%;
+    height: 150px; /* Ajusta la altura para hacer el campo más grande */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Permite redimensionar verticalmente */
+    box-sizing: border-box;
+}
+
+#comentarios button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#comentarios button:hover {
+    background-color: #45a049;
+}
